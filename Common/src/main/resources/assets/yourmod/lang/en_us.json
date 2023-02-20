@@ -6,10 +6,10 @@
   "hexcasting.spell.book.yourmod:example/spell": "Exmpl. Spell Actn.",
 
   "yourmod.entry.example_actions": "Example Actions",
-  "yourmod.page.example_actions.example/const": "",
+  "yourmod.page.example_actions.example/const": "Accepts an entity, returns whether the caster is allied with that entity.",
 
   "yourmod.entry.example_spells": "Example Spells",
-  "yourmod.page.example_spells.example/spell": "",
+  "yourmod.page.example_spells.example/spell": "Accepts a position, replaces the block at that position with air.",
 
   "_comment": "Config Entries",
   "text.autoconfig.yourmod.title": "Your Mod Configs",

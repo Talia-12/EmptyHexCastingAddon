@@ -2,6 +2,7 @@
 
 package yourmod.name.here.common.casting
 
+import at.petrak.hexcasting.api.PatternRegistry
 import at.petrak.hexcasting.api.spell.Action
 import at.petrak.hexcasting.api.spell.iota.PatternIota
 import at.petrak.hexcasting.api.spell.math.HexDir
@@ -18,6 +19,20 @@ object Patterns {
 	var PATTERNS: MutableList<Triple<HexPattern, ResourceLocation, Action>> = ArrayList()
 	@JvmField
 	var PER_WORLD_PATTERNS: MutableList<Triple<HexPattern, ResourceLocation, Action>> = ArrayList()
+
+	@JvmStatic
+	fun registerPatterns() {
+		try {
+			for ((pattern, location, action) in PATTERNS) {
+				PatternRegistry.mapPattern(pattern, location, action)
+			}
+			for ((pattern, location, action) in PER_WORLD_PATTERNS) {
+				PatternRegistry.mapPattern(pattern, location, action, true)
+			}
+		} catch (e: PatternRegistry.RegisterPatternException) {
+			e.printStackTrace()
+		}
+	}
 
 	// ========================== Examples =================================
 	@JvmField

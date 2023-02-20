@@ -15,7 +15,7 @@ import org.apache.commons.lang3.tuple.Pair;
 import thedarkcolour.kotlinforforge.KotlinModLoadingContext;
 import yourmod.name.here.api.YourModAPI;
 import yourmod.name.here.api.config.YourModConfig;
-import yourmod.name.here.common.casting.RegisterPatterns;
+import yourmod.name.here.common.casting.Patterns;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
@@ -52,7 +52,7 @@ public class ForgeYourModInitializer {
 		
 		modBus.register(ForgeYourModClientInitializer.class);
 		
-		modBus.addListener((FMLCommonSetupEvent evt) -> evt.enqueueWork(RegisterPatterns::registerPatterns));
+		modBus.addListener((FMLCommonSetupEvent evt) -> evt.enqueueWork(Patterns::registerPatterns));
 	}
 	
 	// https://github.com/VazkiiMods/Botania/blob/1.18.x/Forge/src/main/java/vazkii/botania/forge/ForgeCommonInitializer.java
