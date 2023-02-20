@@ -1,0 +1,22 @@
+{
+  "hexcasting.spell.yourmod:example/const": "Example Const Media Action",
+  "hexcasting.spell.yourmod:example/spell": "Example Spell Action",
+
+  "hexcasting.spell.book.yourmod:example/const": "Exmpl. Const Media Actn.",
+  "hexcasting.spell.book.yourmod:example/spell": "Exmpl. Spell Actn.",
+
+  "yourmod.entry.example_actions": "Example Actions",
+  "yourmod.page.example_actions.example/const": "",
+
+  "yourmod.entry.example_spells": "Example Spells",
+  "yourmod.page.example_spells.example/spell": "",
+
+  "_comment": "Config Entries",
+  "text.autoconfig.yourmod.title": "Your Mod Configs",
+  "text.autoconfig.yourmod.category.common": "Common",
+  "text.autoconfig.yourmod.category.client": "Client",
+  "text.autoconfig.yourmod.category.server": "Server",
+
+  "text.autoconfig.yourmod.option.server.exampleSpells.exampleConstActionCost": "Example Const Action Cost",
+  "text.autoconfig.yourmod.option.server.exampleSpells.exampleSpellActionCost": "Example Spell Action Cost"
+}

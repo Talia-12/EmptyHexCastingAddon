@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "yourmod",
+  "version": "${version}",
+
+  "name": "Your Mod",
+  "description": "Empty Addon mod for Hex Casting to build into whatever you want it to be.",
+  "authors": [
+    "Talia"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/Talia-12/EmptyHexCastingAddon"
+  },
+
+  "license": "MIT",
+  "icon": "logo.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {"adapter": "kotlin", "value": "yourmod.name.here.fabric.FabricYourModInitializer"}
+    ],
+    "client": [
+      {"adapter": "kotlin", "value": "yourmod.name.here.fabric.FabricYourModClientInitializer"}
+    ],
+    "fabric-datagen": [
+      "yourmod.name.here.fabric.datagen.YourModFabricDataGenerators"
+    ],
+    "cardinal-components": [
+      "yourmod.name.here.fabric.cc.YourModCardinalComponents"
+    ],
+    "rei_client": [
+      "yourmod.name.here.fabric.interop.rei.YourModREIPlugin"
+    ],
+    "emi": [
+      "yourmod.name.here.fabric.interop.emi.YourModEMIPlugin"
+    ],
+    "modmenu": [
+      "yourmod.name.here.fabric.interop.ModMenuInterop"
+    ]
+  },
+  "mixins": [
+    "yourmodplat.mixins.json",
+    "yourmod.mixins.json"
+  ],
+  "accessWidener": "yourmod.accesswidener",
+
+  "depends": {
+    "minecraft": "=1.19.2",
+    "java": ">=17",
+    "fabricloader": ">=0.14",
+    "fabric": ">=0.64",
+    "fabric-language-kotlin": ">=1.7.4+kotlin.1.6.21",
+    "cardinal-components": ">=5.0.2",
+    "patchouli": ">=1.19.2-77",
+    "paucal": "0.5.x",
+    "hexcasting": ">=0.10.3"
+  },
+
+  "custom": {
+    "cardinal-components": [
+    ]
+  }
+}
