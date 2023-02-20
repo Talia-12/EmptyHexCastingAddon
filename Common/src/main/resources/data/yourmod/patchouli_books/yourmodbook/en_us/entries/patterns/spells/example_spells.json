@@ -2,7 +2,7 @@
   "name": "yourmod.entry.example_spells",
   "category": "hexcasting:patterns/spells",
   "icon": "minecraft:furnace",
-  "sortnum": 10,
+  "sortnum": -1,
   "advancement": "hexcasting:root",
   "read_by_default": true,
   "pages": [

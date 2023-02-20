@@ -24,12 +24,6 @@
     "client": [
       {"adapter": "kotlin", "value": "yourmod.name.here.fabric.FabricYourModClientInitializer"}
     ],
-    "fabric-datagen": [
-      "yourmod.name.here.fabric.datagen.YourModFabricDataGenerators"
-    ],
-    "cardinal-components": [
-      "yourmod.name.here.fabric.cc.YourModCardinalComponents"
-    ],
     "rei_client": [
       "yourmod.name.here.fabric.interop.rei.YourModREIPlugin"
     ],

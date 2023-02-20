@@ -17,6 +17,7 @@
   "text.autoconfig.yourmod.category.client": "Client",
   "text.autoconfig.yourmod.category.server": "Server",
 
+  "text.autoconfig.yourmod.option.server.exampleSpells": "Example Spells Costs",
   "text.autoconfig.yourmod.option.server.exampleSpells.exampleConstActionCost": "Example Const Action Cost",
   "text.autoconfig.yourmod.option.server.exampleSpells.exampleSpellActionCost": "Example Spell Action Cost"
 }
