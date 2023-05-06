@@ -1,7 +1,7 @@
 package yourmod.name.here.api.config
 
-import at.petrak.hexcasting.api.HexAPI
 import net.minecraft.resources.ResourceLocation
+import yourmod.name.here.api.YourModAPI
 
 object YourModConfig {
     interface CommonConfigAccess { }
@@ -53,7 +53,7 @@ object YourModConfig {
     var common: CommonConfigAccess = DummyCommon
         set(access) {
             if (field != DummyCommon) {
-                HexAPI.LOGGER.warn("CommonConfigAccess was replaced! Old {} New {}",
+                YourModAPI.LOGGER.warn("CommonConfigAccess was replaced! Old {} New {}",
                         field.javaClass.name, access.javaClass.name)
             }
             field = access
@@ -63,7 +63,7 @@ object YourModConfig {
     var client: ClientConfigAccess = DummyClient
         set(access) {
             if (field != DummyClient) {
-                HexAPI.LOGGER.warn("ClientConfigAccess was replaced! Old {} New {}",
+                YourModAPI.LOGGER.warn("ClientConfigAccess was replaced! Old {} New {}",
                         field.javaClass.name, access.javaClass.name)
             }
             field = access
@@ -73,7 +73,7 @@ object YourModConfig {
     var server: ServerConfigAccess = DummyServer
         set(access) {
             if (field != DummyServer) {
-                HexAPI.LOGGER.warn("ServerConfigAccess was replaced! Old {} New {}",
+                YourModAPI.LOGGER.warn("ServerConfigAccess was replaced! Old {} New {}",
                         field.javaClass.name, access.javaClass.name)
             }
             field = access
